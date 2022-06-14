@@ -1,0 +1,95 @@
+@use '../../../../../assets/build/scss/colors.scss' as colors;
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login-container{
+    border-radius: 15px;
+    height: 80%;
+    width: 90%;
+    max-width: 350px;
+    background-color: colors.$background;
+    -webkit-box-shadow: 0 10px 23px rgba(0, 246, 255, 0.4);
+      -moz-box-shadow: 0px 0px 29px -18px rgba(0, 246, 255, 0.80);
+      box-shadow: 0 10px 23px rgb(0 246 255 /30%);
+    .login-header{
+      padding: 16px 0;
+      display: flex;
+      justify-content: center;
+      img{
+        width: 120px;
+      }
+    }
+    .login-form{
+      h2{
+        color: white;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      form{
+        width: 80%;
+        input{
+          color: white;
+          background-color: colors.$dark-blue002;
+          border: 1px solid colors.$light-blue002;
+          margin-top: 24px;
+          border-radius: 8px;
+          padding: 8px;
+          width: 100%;
+          height: 50px;
+          &:nth-child(2){
+            margin-bottom: 6px;
+          }
+        }
+        span{
+          color: rgb(102, 102, 102);
+          &:hover{
+            color: rgb(175, 175, 175);
+          cursor: pointer;
+          }
+
+        }
+        .btn-login{
+          margin-top: 10px;
+          height: 50px;
+          width: 100%;
+          border-radius:8px;
+          background-color: colors.$dark-blue001;
+          border: 1px solid colors.$light-blue002;
+          color: white;
+          &:hover{
+            background-color: colors.$dark-blue002;
+          }
+        }
+
+      }
+
+      .signup-option{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+        span{
+          color: white;
+        }
+        .btn-signup{
+          margin-top: 10px;
+          height: 50px;
+          width: 100%;
+          border-radius:8px;
+          background-color: colors.$background;
+          border: 1px solid colors.$light-blue002;
+          color: colors.$dark-blue001;
+          &:hover{
+            background-color: colors.$dark-blue002;
+          }
+        }
+      }
+    }
+  }
+}

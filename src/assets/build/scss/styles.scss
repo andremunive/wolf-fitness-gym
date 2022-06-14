@@ -1,0 +1,9 @@
+@use './colors.scss' as colors;
+
+
+body{
+  background-color: colors.$background;
+  font-family: 'Poppins', sans-serif;
+}
+
+

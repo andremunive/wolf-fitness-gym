@@ -1,0 +1,30 @@
+<main>
+  <div class="login-container">
+    <div class="login-header">
+      <img
+        src="../../../../../assets/build/images/big/logo-no-title.png"
+        alt=""
+      />
+    </div>
+    <div class="login-form">
+      <h2>Inicie sesión</h2>
+      <form action="login">
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Contraseña"
+        />
+        <span>Olvidé mi contraseña</span>
+        <button class="btn-login" type="submit">Iniciar Sesión</button>
+      </form>
+      <div class="signup-option">
+        <span>O</span>
+        <button class="btn-signup" type="submit" [routerLink]="['../signup']">
+          Regístrate
+        </button>
+      </div>
+    </div>
+  </div>
+</main>

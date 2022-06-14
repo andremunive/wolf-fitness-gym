@@ -1,0 +1,79 @@
+<main>
+  <div class="signup-container">
+    <div class="signup-header">
+      <img
+        src="../../../../../assets/build/images/big/logo-no-title.png"
+        alt=""
+      />
+      <h2>Regístrate</h2>
+    </div>
+    <div class="signup-data">
+      <form action="signup">
+        <div class="gender inputSignup">
+          <section class="man" (click)="changeSelected()" [ngClass]="man">
+            Masculino
+          </section>
+          <section class="woman" (click)="changeSelected()" [ngClass]="woman">
+            Femenino
+          </section>
+        </div>
+        <input
+          class="inputSignup"
+          type="name"
+          placeholder="Nombre"
+          id="IFirstName"
+        />
+        <input
+          class="inputSignup"
+          type="name"
+          placeholder="Apellido"
+          id="ILastName"
+        />
+        <input
+          class="inputSignup"
+          type="date"
+          placeholder="Fecha de nacimiento"
+          id="IBirthDate"
+        />
+        <input
+          class="inputSignup"
+          type="number"
+          placeholder="Estatura (cm)"
+          id="IHeight"
+        />
+
+        <input
+          class="inputSignup"
+          type="address"
+          placeholder="Dirección"
+          id="IAddress"
+        />
+        <input
+          class="inputSignup"
+          type="number"
+          placeholder="WhatsApp"
+          id="IPhone"
+        />
+
+        <input
+          class="inputSignup"
+          type="email"
+          placeholder="Correo electrónico"
+          id="IEmail"
+        />
+        <input
+          class="inputSignup"
+          type="password"
+          placeholder="Contraseña"
+          id="IPassword"
+        />
+        <input
+          class="inputSignup"
+          type="password"
+          placeholder="Confirme su contraseña"
+          id="IConfirmPassword"
+        />
+      </form>
+    </div>
+  </div>
+</main>
