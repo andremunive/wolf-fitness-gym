@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'login', component: LoginComponent
+        path: '', component: LoginComponent
       },
       {
         path: 'signup', component: SignupComponent
@@ -18,7 +18,7 @@ const routes: Routes = [
         path: 'forgot', component: ForgotComponent
       },
     ]
-  }
+  },
 ];
 
 @NgModule({
